@@ -16,7 +16,7 @@ const OrderPage = () => {
 
   const totalPrice = orders.reduce((total, item) => total + item.price, 0);
   const orderDate = new Date().toISOString().split('T')[0];
-  const customerId = "123"; // Example customer ID
+  const customerId = "123";
 
   const handlePayment = async () => {
     const orderData = {
